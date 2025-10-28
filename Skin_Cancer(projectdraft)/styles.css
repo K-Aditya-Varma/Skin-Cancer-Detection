@@ -1,0 +1,145 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Black background */
+    color: #f0f0f0; /* Light grey text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main container with spacing and shadow */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+    width: 90%;
+    max-width: 1300px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+/* Left content section */
+.content-section {
+    flex: 1;
+    padding: 40px 50px; /* Added more padding */
+    background: #212121;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease-in-out;
+}
+
+.content-section:hover {
+    background: #242424; /* Slight hover effect */
+}
+
+.content-section h1 {
+    color: #00bcd4;
+    font-size: 34px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.content-section p {
+    font-size: 17px;
+    line-height: 1.8;
+    margin: 15px 0;
+    color: #cfcfcf;
+}
+
+.content-section ul {
+    margin: 15px 0;
+    padding-left: 25px;
+}
+
+.content-section li {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #b3e5fc;
+}
+
+.content-section strong {
+    color: #00bcd4;
+}
+
+/* Right upload section */
+.upload-section {
+    flex: 1;
+    padding: 40px 50px;
+    text-align: center;
+}
+
+.upload-section h2 {
+    color: #00bcd4;
+    font-size: 28px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+input[type="file"], input[type="submit"] {
+    background-color: #333333;
+    color: #fff;
+    padding: 14px 16px;
+    border: 2px solid #444;
+    border-radius: 10px;
+    margin: 20px 0;
+    width: 90%;
+    max-width: 400px;
+    box-sizing: border-box;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="file"]:hover, input[type="submit"]:hover {
+    border-color: #00bcd4;
+    background-color: #1e1e1e;
+    color: #00e5ff;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background-color: #00bcd4;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+input[type="submit"]:hover {
+    background-color: #00acc1;
+}
+
+#fileInfo {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #00bcd4;
+}
+
+#imagePreview img {
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    max-width: 100%;
+    max-height: 300px;
+}
+
+#result {
+    margin-top: 30px;
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 12px;
+    color: #b3e5fc;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Hover effects for buttons and sections */
+button:hover, input[type="file"]:hover, input[type="submit"]:hover {
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+}

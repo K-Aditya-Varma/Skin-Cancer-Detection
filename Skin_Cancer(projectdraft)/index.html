@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Cancer Detection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Left Section -->
+        <div class="content-section">
+            <h1>Skin Cancer Detection</h1>
+            <p>
+                Using Machine Learning, this tool classifies and predicts the stage of skin cancer from uploaded images, aiding early detection for better outcomes.
+            </p>
+            <h2>Types of Skin Cancer We Classify</h2>
+            <ul>
+                <li>
+                    <strong>NV (Melanocytic Nevus):</strong> 
+                </li>
+                <li>
+                    <strong>MEL (Melanoma):</strong> 
+                </li>
+                <li>
+                    <strong>BKL (Benign Keratosis):</strong> 
+                </li>
+                <li>
+                    <strong>BCC (Basal Cell Carcinoma):</strong> 
+                </li>
+                <li>
+                    <strong>AKIEC (Actinic Keratosis & IEC):</strong> 
+                <li>
+                    <strong>VASC (Vascular Lesions):</strong> 
+                <li>
+                    <strong>DF (Dermatofibroma):</strong> 
+                </li>
+            </ul>
+            <p>
+                Our system also provides stage predictions, helping to identify early or advanced conditions.
+            </p>
+            <p>
+                <strong>Disclaimer:</strong> This tool is not a substitute for medical diagnosis. Consult a doctor for accurate advice.
+            </p>
+        </div>
+
+        <!-- Right Section -->
+        <div class="upload-section">
+            <h2>Upload a Skin Image</h2>
+            <form id="uploadForm">
+                <input type="file" id="fileInput" name="file" accept="image/*">
+                <input type="submit" value="Upload">
+            </form>
+            <div id="fileInfo"></div> 
+            <div id="imagePreview"></div> <!-- Display the uploaded image -->
+            <div id="result"></div> <!-- Display the result -->
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
